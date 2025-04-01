@@ -24,6 +24,9 @@ This script allows you to remotely control your Linux system via a Telegram bot.
 - **Execute commands**: Send any shell command (e.g., `whoami`, `ls -la`) to the bot, and it will return the output.
 - **Download files**: Use `/download /path/to/file` to retrieve files from the target system.
 
+## Video Tutorial
+Youtube: https://youtu.be/i45yAoPI4c8?si=Z5MtSuYfYvUxMo1z
+
 ## How to remove the script
 ```bash
 sudo systemctl stop sysmnt >/dev/null 2>&1
