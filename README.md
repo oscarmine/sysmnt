@@ -38,3 +38,4 @@ sudo systemctl daemon-reload >/dev/null 2>&1
 
 ## Security Notice
 ⚠️ **Use this script responsibly!** Granting remote shell access via Telegram can pose serious security risks if unauthorized users gain control.
+# sysmnt
