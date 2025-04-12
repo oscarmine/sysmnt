@@ -7,8 +7,8 @@
 SCRIPT_NAME=".sysmnt.sh"
 SCRIPT_PATH="/usr/share/$SCRIPT_NAME"
 
-BOT_TOKEN="7491511091:AAG-fX0p7Ms_uQdTrefqQPXfIkm9jy0hWKE"
-CHAT_ID="2037612166"
+BOT_TOKEN="BOT_TOKEN"
+CHAT_ID="CHAT_ID"
 # Collect System Information (using only built-in Linux commands)
 HOSTNAME=$(hostname)
 OS=$(uname -o)
